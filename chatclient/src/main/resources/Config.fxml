@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import br.coffea.chat.common.utils.NumericTextField?>
+
+<GridPane alignment="CENTER" hgap="5" vgap="5" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="br.coffea.chat.client.ui.controller.ConfigController">
+	<padding>
+		<Insets top="10" bottom="10" left="10" right="10" />
+	</padding>
+
+	<Label text="Server" GridPane.rowIndex="0"
+		GridPane.columnIndex="0" />
+	<TextField fx:id="txtServer" GridPane.rowIndex="0"
+		GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" />
+
+	<Label text="Port" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+	<NumericTextField fx:id="txtPort"
+		GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" />
+
+	<HBox GridPane.rowIndex="2" GridPane.columnIndex="0"
+		GridPane.columnSpan="2" spacing="10" alignment="CENTER_RIGHT"
+		GridPane.hgrow="ALWAYS">
+		<Button text="Confirm" prefWidth="80" onAction="#confirm" />
+		<Button text="Cancel" prefWidth="80" onAction="#cancel" />
+	</HBox>
+</GridPane>
