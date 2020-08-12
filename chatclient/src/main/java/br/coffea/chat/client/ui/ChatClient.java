@@ -17,7 +17,7 @@ public class ChatClient extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		primaryStage.setTitle("Coffea Enterprise");
 		primaryStage.setMinWidth(380);
-		primaryStage.setHeight(350);
+		primaryStage.setMinHeight(350);
 		
 		FXMLLoader loader = new FXMLLoader(ChatClient.class.getResource("/MainLayout.fxml"));
 		Pane root = loader.load();
